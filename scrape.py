@@ -48,6 +48,7 @@ def clean_body_content(body_content):
         line.strip() for line in cleaned_content.splitlines() if line.strip()
     )
 
+    
     return cleaned_content
 
 

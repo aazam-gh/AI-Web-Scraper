@@ -20,6 +20,7 @@ if st.button("Scrape Website"):
         dom_content = scrape_website(url)
         body_content = extract_body_content(dom_content)
         cleaned_content = clean_body_content(body_content)
+        print(clean_body_content)
 
         # Store the DOM content in Streamlit session state
         st.session_state.dom_content = cleaned_content
